@@ -1,8 +1,7 @@
 ﻿using System.Linq.Expressions;
 using FluentAssertions;
-using SpecificationPattern.LinqExpressions;
 
-namespace SpecificationPattern.UnitTests.Specifications.LinqExpressions
+namespace SpecificationPattern.UnitTests
 {
     public sealed class IdentitySpecificationUnitTests
     {

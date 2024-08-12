@@ -1,7 +1,6 @@
 ﻿using System.Linq.Expressions;
-using SpecificationPattern.LinqExpressions;
 
-namespace SpecificationPattern.UnitTests.Specifications.LinqExpressions.TestModels
+namespace SpecificationPattern.UnitTests.TestModels
 {
     internal sealed class TestLeftSpecification(bool value) : Specification<TestModel>
     {

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace SpecificationPattern.LinqExpressions
+namespace SpecificationPattern
 {
     public sealed class NotSpecification<T>(Specification<T> specification) : Specification<T>
     {

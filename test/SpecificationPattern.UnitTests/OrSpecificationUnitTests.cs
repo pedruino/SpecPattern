@@ -1,8 +1,7 @@
 ﻿using FluentAssertions;
-using SpecificationPattern.LinqExpressions;
-using SpecificationPattern.UnitTests.Specifications.LinqExpressions.TestModels;
+using SpecificationPattern.UnitTests.TestModels;
 
-namespace SpecificationPattern.UnitTests.Specifications.LinqExpressions
+namespace SpecificationPattern.UnitTests
 {
     public sealed class OrSpecificationUnitTests
     {

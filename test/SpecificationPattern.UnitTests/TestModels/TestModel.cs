@@ -1,4 +1,4 @@
-﻿namespace SpecificationPattern.UnitTests.Specifications.LinqExpressions.TestModels
+﻿namespace SpecificationPattern.UnitTests.TestModels
 {
     internal sealed class TestModel
     {

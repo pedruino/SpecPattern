@@ -1,8 +1,8 @@
 ﻿using System.Linq.Expressions;
 
-namespace SpecificationPattern.LinqExpressions
+namespace SpecificationPattern
 {
-    public sealed class AndSpecification<T>(Specification<T> left, Specification<T> right) : Specification<T>
+    public sealed class OrSpecification<T>(Specification<T> left, Specification<T> right) : Specification<T>
     {
         public override Expression<Func<T, bool>> ToExpression()
         {
@@ -11,7 +11,7 @@ namespace SpecificationPattern.LinqExpressions
 
             var invokedExpression = Expression.Invoke(rightExpression, leftExpression.Parameters);
 
-            return (Expression<Func<T, bool>>)Expression.Lambda(Expression.AndAlso(leftExpression.Body, invokedExpression), leftExpression.Parameters);
+            return (Expression<Func<T, bool>>)Expression.Lambda(Expression.OrElse(leftExpression.Body, invokedExpression), leftExpression.Parameters);
         }
     }
 }
