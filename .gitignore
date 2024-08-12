@@ -1,0 +1,35 @@
+.idea/
+.vs/
+obj/
+bin/
+Softplan.PgCardProvider.sln.DotSettings.user
+/global.json
+
+# OpenCover UI analysis results
+OpenCover/
+
+# Sonar
+.sonarqube/
+
+# Coverage
+coverage/
+
+# lcov
+**/lcov.info
+lcov.*
+
+#SpecFlow Stuff
+*.feature.cs
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio code
+.vscode/
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
